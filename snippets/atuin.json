@@ -1,0 +1,94 @@
+{
+  "Atuin Starter Config": {
+    "prefix": "atuin-starter",
+    "body": [
+      "# Atuin Configuration",
+      "# https://docs.atuin.sh/cli/configuration/config/",
+      "",
+      "search_mode = \"${1|fuzzy,prefix,fulltext,skim|}\"",
+      "filter_mode = \"${2|global,host,session,directory,workspace|}\"",
+      "style = \"${3|compact,full,auto|}\"",
+      "",
+      "auto_sync = ${4:true}",
+      "update_check = ${5:true}",
+      "sync_address = \"https://api.atuin.sh\"",
+      "sync_frequency = \"5m\"",
+      "",
+      "show_preview = true",
+      "show_help = true",
+      "enter_accept = false",
+      "secrets_filter = true",
+      "store_failed = true",
+      ""
+    ],
+    "description": "A complete Atuin starter configuration with common settings"
+  },
+  "Atuin Daemon Config": {
+    "prefix": "atuin-daemon",
+    "body": [
+      "[daemon]",
+      "enabled = ${1:true}",
+      "autostart = ${2:true}",
+      "sync_frequency = ${3:300}",
+      "tcp_port = ${4:8889}",
+      "systemd_socket = ${5:false}",
+      ""
+    ],
+    "description": "Atuin daemon configuration for background sync"
+  },
+  "Atuin Sync Config": {
+    "prefix": "atuin-sync",
+    "body": [
+      "auto_sync = ${1:true}",
+      "sync_address = \"${2:https://api.atuin.sh}\"",
+      "sync_frequency = \"${3:5m}\"",
+      "",
+      "[sync]",
+      "records = ${4:true}",
+      ""
+    ],
+    "description": "Atuin sync server configuration"
+  },
+  "Atuin Search Config": {
+    "prefix": "atuin-search",
+    "body": [
+      "search_mode = \"${1|fuzzy,prefix,fulltext,skim,daemon-fuzzy|}\"",
+      "filter_mode = \"${2|global,host,session,directory,workspace|}\"",
+      "keymap_mode = \"${3|emacs,vim-normal,vim-insert,auto|}\"",
+      "exit_mode = \"${4|return-original,return-query|}\"",
+      "",
+      "[search]",
+      "recency_score_multiplier = ${5:1.0}",
+      "frequency_score_multiplier = ${6:1.0}",
+      "frecency_score_multiplier = ${7:1.0}",
+      ""
+    ],
+    "description": "Atuin search tuning with scoring multipliers"
+  },
+  "Atuin Theme Config": {
+    "prefix": "atuin-theme",
+    "body": [
+      "[theme]",
+      "name = \"${1:default}\"",
+      "debug = ${2:false}",
+      "max_depth = ${3:10}",
+      ""
+    ],
+    "description": "Atuin theme configuration"
+  },
+  "Atuin UI Config": {
+    "prefix": "atuin-ui",
+    "body": [
+      "style = \"${1|compact,full,auto|}\"",
+      "inline_height = ${2:40}",
+      "show_preview = ${3:true}",
+      "show_help = ${4:true}",
+      "show_tabs = ${5:true}",
+      "",
+      "[ui]",
+      "columns = [\"${6:duration}\", \"${7:time}\", \"${8:command}\"]",
+      ""
+    ],
+    "description": "Atuin UI and columns configuration"
+  }
+}

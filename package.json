@@ -1,0 +1,76 @@
+{
+  "name": "atuin-vscode-toolkit",
+  "displayName": "Atuin Toolkit",
+  "description": "Complete Atuin shell history toolkit: IntelliSense, validation, and documentation for config.toml configuration",
+  "version": "0.1.0",
+  "publisher": "atoolz",
+  "author": {
+    "name": "Andre Ahlert"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atoolz/atuin-vscode-toolkit"
+  },
+  "bugs": {
+    "url": "https://github.com/atoolz/atuin-vscode-toolkit/issues"
+  },
+  "homepage": "https://github.com/atoolz/atuin-vscode-toolkit#readme",
+  "icon": "assets/icon.png",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Linters"
+  ],
+  "keywords": [
+    "atuin",
+    "shell",
+    "history",
+    "toml",
+    "terminal",
+    "config",
+    "sync"
+  ],
+  "activationEvents": [
+    "onLanguage:toml",
+    "workspaceContains:**/atuin/config.toml"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "toml",
+        "aliases": ["TOML"],
+        "extensions": [".toml"]
+      }
+    ],
+    "snippets": [
+      {
+        "language": "toml",
+        "path": "./snippets/atuin.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "lint": "tsc --noEmit",
+    "package": "vsce package",
+    "prepublish": "npm run build",
+    "test:e2e": "tsc -p ./tsconfig.test.json && node ./dist/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/test-electron": "^2.5.2",
+    "esbuild": "^0.20.0",
+    "glob": "^13.0.6",
+    "mocha": "^11.7.5",
+    "typescript": "^5.3.0"
+  }
+}

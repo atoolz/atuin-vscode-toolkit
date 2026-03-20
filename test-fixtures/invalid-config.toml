@@ -1,0 +1,19 @@
+# Invalid config for diagnostic tests
+unknown_top_option = true
+network_timeout = "not a number"
+search_mode = "nonexistent"
+filter_mode = "invalid_mode"
+
+[nonexistent_section]
+disabled = false
+
+[daemon]
+unknown_option = true
+tcp_port = "abc"
+
+[logs]
+level = "superverbose"
+retention = "forever"
+
+[preview]
+strategy = "dynamic"

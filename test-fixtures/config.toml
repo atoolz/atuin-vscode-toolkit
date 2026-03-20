@@ -1,0 +1,102 @@
+# Atuin Configuration - Test Fixture
+# https://docs.atuin.sh/cli/configuration/config/
+
+db_path = "~/.local/share/atuin/history.db"
+key_path = "~/.local/share/atuin/key"
+session_path = "~/.local/share/atuin/session"
+
+dialect = "us"
+auto_sync = true
+update_check = true
+sync_address = "https://api.atuin.sh"
+sync_frequency = "5m"
+
+search_mode = "fuzzy"
+filter_mode = "global"
+filter_mode_shell_up_key_binding = "host"
+search_mode_shell_up_key_binding = "prefix"
+
+style = "compact"
+inline_height = 40
+invert = false
+show_preview = true
+max_preview_height = 4
+show_help = true
+show_tabs = true
+show_numeric_shortcuts = true
+auto_hide_height = 8
+
+exit_mode = "return-original"
+keymap_mode = "emacs"
+word_jump_mode = "emacs"
+
+history_format = "{time}\t{command}\t{duration}"
+store_failed = true
+secrets_filter = true
+workspaces = false
+enter_accept = false
+smart_sort = false
+command_chaining = false
+
+network_timeout = 30
+network_connect_timeout = 5
+local_timeout = 2.0
+prefers_reduced_motion = false
+ctrl_n_shortcuts = false
+
+[daemon]
+enabled = true
+autostart = true
+sync_frequency = 300
+tcp_port = 8889
+systemd_socket = false
+
+[sync]
+records = true
+
+[search]
+recency_score_multiplier = 1.0
+frequency_score_multiplier = 1.0
+frecency_score_multiplier = 1.0
+
+[stats]
+common_subcommands = ["apt", "cargo", "docker", "git", "kubectl", "npm", "yarn"]
+common_prefix = ["sudo", "doas"]
+ignored_commands = ["ls", "cd"]
+
+[keys]
+scroll_exits = true
+prefix = "a"
+exit_past_line_start = true
+accept_past_line_end = true
+accept_past_line_start = false
+accept_with_backspace = false
+
+[preview]
+strategy = "auto"
+
+[theme]
+name = "default"
+debug = false
+max_depth = 10
+
+[logs]
+enabled = true
+dir = "~/.atuin/logs"
+level = "info"
+retention = 4
+
+[ui]
+columns = ["duration", "time", "command"]
+
+[ai]
+enabled = false
+send_cwd = false
+
+[dotfiles]
+enabled = false
+
+[tmux]
+enabled = false
+width = "80%"
+height = "60%"
