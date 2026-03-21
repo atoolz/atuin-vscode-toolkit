@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120a20"/>
+      <stop offset="100%" stop-color="#1a1030"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="editorClip">
+      <rect x="620" y="80" width="520" height="460" rx="8"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.03">
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#a855f7" stroke-width="1" transform="translate(60,0)" />
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#a855f7" stroke-width="1" transform="translate(120,0)" />
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#a855f7" stroke-width="1" transform="translate(180,0)" />
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#a855f7" stroke-width="1" transform="translate(240,0)" />
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#a855f7" stroke-width="1" transform="translate(300,0)" />
+    <line x1="0" y1="630" x2="1200" y2="630" stroke="#a855f7" stroke-width="1" transform="translate(0,-60)" />
+    <line x1="0" y1="630" x2="1200" y2="630" stroke="#a855f7" stroke-width="1" transform="translate(0,-120)" />
+    <line x1="0" y1="630" x2="1200" y2="630" stroke="#a855f7" stroke-width="1" transform="translate(0,-180)" />
+    <line x1="0" y1="630" x2="1200" y2="630" stroke="#a855f7" stroke-width="1" transform="translate(0,-240)" />
+  </g>
+
+  <!-- Purple accent line top -->
+  <rect x="0" y="0" width="1200" height="2" fill="url(#accentLine)"/>
+
+  <!-- LEFT SIDE: Icon + Text -->
+
+  <!-- Icon: purple rounded square with "At" -->
+  <rect x="60" y="120" width="90" height="90" rx="18" fill="url(#iconGrad)"/>
+  <rect x="61" y="121" width="88" height="88" rx="17" fill="none" stroke="#c084fc" stroke-width="1" opacity="0.4"/>
+  <text x="105" y="168" text-anchor="middle" dominant-baseline="central" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff" letter-spacing="-1">At</text>
+
+  <!-- Title -->
+  <text x="170" y="148" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff" letter-spacing="-0.5">Atuin Toolkit</text>
+  <text x="170" y="188" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="20" fill="#a855f7" font-weight="500">for VS Code</text>
+
+  <!-- Divider -->
+  <rect x="60" y="240" width="480" height="1" fill="#a855f7" opacity="0.3"/>
+
+  <!-- Features list -->
+  <g font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="18" fill="#e5e5e5">
+    <!-- Feature 1 -->
+    <circle cx="80" cy="283" r="4" fill="#a855f7"/>
+    <text x="100" y="289" font-weight="600" fill="#a855f7">13 sections</text>
+    <text x="235" y="289" fill="#a3a3a3" font-size="15">with full schema coverage</text>
+
+    <!-- Feature 2 -->
+    <circle cx="80" cy="323" r="4" fill="#a855f7"/>
+    <text x="100" y="329" font-weight="600" fill="#a855f7">75+ options</text>
+    <text x="235" y="329" fill="#a3a3a3" font-size="15">complete configuration support</text>
+
+    <!-- Feature 3 -->
+    <circle cx="80" cy="363" r="4" fill="#a855f7"/>
+    <text x="100" y="369" font-weight="600" fill="#a855f7">Enum validation</text>
+    <text x="275" y="369" fill="#a3a3a3" font-size="15">search_mode, filter_mode</text>
+
+    <!-- Feature 4 -->
+    <circle cx="80" cy="403" r="4" fill="#a855f7"/>
+    <text x="100" y="409" font-weight="600" fill="#a855f7">Real-time diagnostics</text>
+    <text x="305" y="409" fill="#a3a3a3" font-size="15">as you type</text>
+
+    <!-- Feature 5 -->
+    <circle cx="80" cy="443" r="4" fill="#a855f7"/>
+    <text x="100" y="449" font-weight="600" fill="#a855f7">6 snippets</text>
+    <text x="218" y="449" fill="#a3a3a3" font-size="15">quick-start templates</text>
+  </g>
+
+  <!-- RIGHT SIDE: Simulated VS Code editor -->
+  <g clip-path="url(#editorClip)">
+    <!-- Editor window background -->
+    <rect x="620" y="80" width="520" height="460" rx="8" fill="#1e1e1e" stroke="#333" stroke-width="1"/>
+
+    <!-- Title bar -->
+    <rect x="620" y="80" width="520" height="32" rx="8" fill="#323233"/>
+    <rect x="620" y="104" width="520" height="8" fill="#323233"/>
+    <!-- Traffic lights -->
+    <circle cx="642" cy="96" r="6" fill="#ff5f57"/>
+    <circle cx="662" cy="96" r="6" fill="#febc2e"/>
+    <circle cx="682" cy="96" r="6" fill="#28c840"/>
+    <!-- Tab -->
+    <rect x="710" y="82" width="140" height="28" fill="#1e1e1e" rx="4"/>
+    <text x="722" y="100" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="12" fill="#cccccc">config.toml</text>
+
+    <!-- Line numbers gutter -->
+    <rect x="620" y="112" width="40" height="428" fill="#1e1e1e"/>
+
+    <!-- Code content -->
+    <g font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="13">
+      <!-- Line 1 -->
+      <text x="640" y="138" fill="#555">1</text>
+      <text x="670" y="138" fill="#6a9955"># Atuin configuration</text>
+
+      <!-- Line 2 -->
+      <text x="640" y="158" fill="#555">2</text>
+
+      <!-- Line 3 -->
+      <text x="640" y="178" fill="#555">3</text>
+      <text x="670" y="178" fill="#9cdcfe">auto_sync</text>
+      <text x="742" y="178" fill="#d4d4d4"> = </text>
+      <text x="762" y="178" fill="#569cd6">true</text>
+
+      <!-- Line 4 -->
+      <text x="640" y="198" fill="#555">4</text>
+      <text x="670" y="198" fill="#9cdcfe">secrets_filter</text>
+      <text x="778" y="198" fill="#d4d4d4"> = </text>
+      <text x="798" y="198" fill="#569cd6">true</text>
+
+      <!-- Line 5 -->
+      <text x="640" y="218" fill="#555">5</text>
+
+      <!-- Line 6 -->
+      <text x="640" y="238" fill="#555">6</text>
+      <text x="670" y="238" fill="#9cdcfe">search_mode</text>
+      <text x="758" y="238" fill="#d4d4d4"> = </text>
+      <text x="778" y="238" fill="#ce9178">"</text>
+
+      <!-- Line 7 -->
+      <text x="640" y="258" fill="#555">7</text>
+
+      <!-- Line 8 -->
+      <text x="640" y="278" fill="#555">8</text>
+      <text x="670" y="278" fill="#9cdcfe">filter_mode</text>
+      <text x="754" y="278" fill="#d4d4d4"> = </text>
+      <text x="774" y="278" fill="#ce9178">"global"</text>
+
+      <!-- Line 9 -->
+      <text x="640" y="298" fill="#555">9</text>
+
+      <!-- Line 10 -->
+      <text x="636" y="318" fill="#555">10</text>
+      <text x="670" y="318" fill="#dcdcaa">[daemon]</text>
+
+      <!-- Line 11 -->
+      <text x="636" y="338" fill="#555">11</text>
+      <text x="670" y="338" fill="#9cdcfe">enabled</text>
+      <text x="726" y="338" fill="#d4d4d4"> = </text>
+      <text x="746" y="338" fill="#569cd6">true</text>
+    </g>
+
+    <!-- Completion dropdown for search_mode enum -->
+    <g filter="url(#glow)">
+      <rect x="776" y="244" width="240" height="132" rx="4" fill="#252526" stroke="#454545" stroke-width="1"/>
+
+      <!-- Completion items -->
+      <g font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="12">
+        <!-- Selected item -->
+        <rect x="778" y="246" width="236" height="22" fill="#094771" rx="2"/>
+        <text x="792" y="261" fill="#a855f7">&#9670;</text>
+        <text x="810" y="261" fill="#ffffff">fuzzy</text>
+        <text x="920" y="261" fill="#888" font-size="10">default</text>
+
+        <text x="792" y="283" fill="#c084fc">&#9670;</text>
+        <text x="810" y="283" fill="#cccccc">prefix</text>
+
+        <text x="792" y="305" fill="#c084fc">&#9670;</text>
+        <text x="810" y="305" fill="#cccccc">fulltext</text>
+
+        <text x="792" y="327" fill="#c084fc">&#9670;</text>
+        <text x="810" y="327" fill="#cccccc">skim</text>
+
+        <text x="792" y="349" fill="#c084fc">&#9670;</text>
+        <text x="810" y="349" fill="#cccccc">daemon-fuzzy</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="#000000" opacity="0.3"/>
+  <text x="600" y="615" text-anchor="middle" font-family="'Cascadia Code', 'Fira Code', Consolas, monospace" font-size="14" fill="#a855f7" opacity="0.7">github.com/atoolz/atuin-vscode-toolkit</text>
+
+  <!-- Purple accent line bottom -->
+  <rect x="0" y="628" width="1200" height="2" fill="url(#accentLine)"/>
+</svg>
