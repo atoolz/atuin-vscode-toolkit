@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120a20"/>
+      <stop offset="100%" stop-color="#1a1030"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+    <linearGradient id="accentOrb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="accentOrb2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#9333ea" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+
+  <!-- Subtle grid dots -->
+  <g opacity="0.05">
+    <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1" fill="#94a3b8"/>
+    </pattern>
+    <rect width="1080" height="1080" fill="url(#dots)"/>
+  </g>
+
+  <!-- Decorative gradient orbs -->
+  <circle cx="540" cy="200" r="350" fill="url(#accentOrb)"/>
+  <circle cx="800" cy="900" r="300" fill="url(#accentOrb2)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1080" height="3" fill="#a855f7" opacity="0.6"/>
+
+  <!-- Icon centered -->
+  <g transform="translate(470, 80)">
+    <rect width="140" height="140" rx="28" fill="url(#iconGrad)"/>
+    <rect x="1.5" y="1.5" width="137" height="137" rx="26" fill="none" stroke="#c084fc" stroke-width="1.5" opacity="0.3"/>
+    <text x="70" y="70" text-anchor="middle" dominant-baseline="central" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="58" font-weight="700" fill="#ffffff" letter-spacing="-2">At</text>
+  </g>
+
+  <!-- Title -->
+  <text x="540" y="290" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="-1.5">Atuin Toolkit</text>
+
+  <!-- Subtitle -->
+  <text x="540" y="340" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="400" fill="#94a3b8">for VS Code</text>
+
+  <!-- Divider -->
+  <rect x="440" y="370" width="200" height="1" fill="#334155"/>
+
+  <!-- Feature list centered -->
+  <g font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#e2e8f0">
+    <circle cx="310" cy="418" r="5" fill="#a855f7"/>
+    <text x="330" y="425">13 config sections</text>
+
+    <circle cx="310" cy="468" r="5" fill="#a855f7"/>
+    <text x="330" y="475">90+ options with types</text>
+
+    <circle cx="310" cy="518" r="5" fill="#a855f7"/>
+    <text x="330" y="525">Enum validation</text>
+
+    <circle cx="310" cy="568" r="5" fill="#a855f7"/>
+    <text x="330" y="575">Real-time diagnostics</text>
+
+    <circle cx="310" cy="618" r="5" fill="#a855f7"/>
+    <text x="330" y="625">6 ready-to-use snippets</text>
+  </g>
+
+  <!-- Code preview block -->
+  <g transform="translate(130, 680)">
+    <rect width="820" height="280" rx="12" fill="#120a20" stroke="#334155" stroke-width="1"/>
+    <!-- Window dots -->
+    <circle cx="24" cy="22" r="5" fill="#ef4444" opacity="0.7"/>
+    <circle cx="44" cy="22" r="5" fill="#eab308" opacity="0.7"/>
+    <circle cx="64" cy="22" r="5" fill="#22c55e" opacity="0.7"/>
+    <!-- Code lines -->
+    <g font-family="'Fira Code', 'Cascadia Code', 'Consolas', monospace" font-size="16">
+      <text x="24" y="60" fill="#c084fc">search_mode</text><text x="140" y="60" fill="#64748b"> = </text><text x="168" y="60" fill="#86efac">"fuzzy"</text>
+      <text x="24" y="88" fill="#c084fc">filter_mode</text><text x="136" y="88" fill="#64748b"> = </text><text x="164" y="88" fill="#86efac">"host"</text>
+      <text x="24" y="116" fill="#c084fc">style</text><text x="72" y="116" fill="#64748b"> = </text><text x="100" y="116" fill="#86efac">"compact"</text>
+      <text x="24" y="144" fill="#c084fc">inline_height</text><text x="160" y="144" fill="#64748b"> = </text><text x="188" y="144" fill="#fbbf24">40</text>
+      <text x="24" y="172" fill="#c084fc">enter_accept</text><text x="152" y="172" fill="#64748b"> = </text><text x="180" y="172" fill="#f9a8d4">true</text>
+      <text x="24" y="208" fill="#64748b">[</text><text x="34" y="208" fill="#7dd3fc">daemon</text><text x="94" y="208" fill="#64748b">]</text>
+      <text x="24" y="236" fill="#c084fc">enabled</text><text x="100" y="236" fill="#64748b"> = </text><text x="128" y="236" fill="#f9a8d4">true</text>
+      <text x="24" y="264" fill="#c084fc">sync_frequency</text><text x="168" y="264" fill="#64748b"> = </text><text x="196" y="264" fill="#fbbf24">300</text>
+    </g>
+    <!-- Autocomplete popup -->
+    <g transform="translate(450, 30)">
+      <rect width="280" height="160" rx="6" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+      <rect x="4" y="6" width="272" height="28" rx="4" fill="#a855f7" opacity="0.2"/>
+      <g font-family="'Fira Code', 'Cascadia Code', 'Consolas', monospace" font-size="14" fill="#e2e8f0">
+        <text x="14" y="26" fill="#ffffff" font-weight="600">fuzzy</text><text x="70" y="26" fill="#64748b" font-size="12">fuzzy matching</text>
+        <text x="14" y="54">prefix</text><text x="80" y="54" fill="#64748b" font-size="12">prefix search</text>
+        <text x="14" y="82">fulltext</text><text x="90" y="82" fill="#64748b" font-size="12">full text search</text>
+        <text x="14" y="110">skim</text><text x="60" y="110" fill="#64748b" font-size="12">skim algorithm</text>
+        <text x="14" y="138">daemon-fuzzy</text><text x="130" y="138" fill="#64748b" font-size="12">daemon mode</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="1030" width="1080" height="50" fill="#120a20" opacity="0.7"/>
+  <text x="540" y="1062" text-anchor="middle" font-family="'Fira Code', 'Cascadia Code', 'Consolas', monospace" font-size="15" fill="#64748b">github.com/atoolz/atuin-vscode-toolkit</text>
+</svg>
