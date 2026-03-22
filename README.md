@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Atuin Toolkit for VS Code" width="100%">
+  <img src="assets/banner.png" alt="Atuin Toolkit for VS Code" width="100%">
 </p>
 
 <h1 align="center">Atuin Toolkit</h1>
@@ -42,7 +42,7 @@ Full autocompletion for all 13 Atuin config sections, their options, enum values
 - **Top-level options** - Complete all 37 root-level configuration options
 
 <p align="center">
-  <img src="assets/demo-completion.svg" alt="IntelliSense completions demo" width="700">
+  <img src="assets/demo-completion.png" alt="IntelliSense completions demo" width="700">
 </p>
 
 ### Hover Documentation
@@ -50,7 +50,7 @@ Full autocompletion for all 13 Atuin config sections, their options, enum values
 Hover over any section name or option to see its description, type, default value, allowed enum values, and a direct link to the [Atuin documentation](https://docs.atuin.sh/cli/configuration/config/).
 
 <p align="center">
-  <img src="assets/demo-hover.svg" alt="Hover documentation demo" width="700">
+  <img src="assets/demo-hover.png" alt="Hover documentation demo" width="700">
 </p>
 
 ### Diagnostics and Validation
@@ -63,7 +63,7 @@ Real-time validation catches configuration errors as you type:
 - Type mismatches (string where boolean expected, etc.)
 
 <p align="center">
-  <img src="assets/demo-diagnostics.svg" alt="Diagnostics and validation demo" width="700">
+  <img src="assets/demo-diagnostics.png" alt="Diagnostics and validation demo" width="700">
 </p>
 
 ### Snippets
